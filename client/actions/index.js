@@ -1,36 +1,39 @@
 import request from 'superagent'
 
 export const SHOW_ERROR = 'SHOW_ERROR'
-export const RECEIVE_POSTS = 'RECEIVE_POSTS'
-export const REQUEST_POSTS = 'REQUEST_POSTS'
+export const RECEIVE_COCKTAIL = 'RECEIVE_COCKTAIL'
+export const REQUEST_COCKTAIL = 'REQUEST_COCKTAIL'
 
-export function requestPosts () {
+export function requestCocktail() {
   return {
-    type: REQUEST_POSTS
+    type: REQUEST_COCKTAIL,
   }
 }
 
-export function receivePosts (posts) {
+export function receiveCocktail(cocktail) {
+  console.log(cocktail)
   return {
-    type: RECEIVE_POSTS,
-    posts: posts.map(post => post.data)
+    type: RECEIVE_COCKTAIL,
+    cocktail: cocktail.drinks,
   }
 }
 
-export function showError (errorMessage) {
+export function showError(errorMessage) {
   return {
     type: SHOW_ERROR,
-    errorMessage: errorMessage
+    errorMessage: errorMessage,
   }
 }
 
-export function fetchPosts (subreddit) {
-  return (dispatch) => {
-    dispatch(requestPosts())
+export function fetchCocktail(ingredient) {
+  // console.log(query)
+  //return the dispatch callback
+  return dispatch => {
+    dispatch(requestCocktail()) //what role does this play?
     return request
-      .get(`/api/v1/reddit/subreddit/${subreddit}`)
+      .get(`/api/v1/cocktail/query/${ingredient}`)
       .then(res => {
-        dispatch(receivePosts(res.body))
+        dispatch(receiveCocktail(res.body))
         return null
       })
       .catch(err => {
