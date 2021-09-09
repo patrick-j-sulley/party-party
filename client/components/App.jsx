@@ -7,14 +7,20 @@ function App() {
   // bit of a title
 
   return (
-    <div className=''>
-      <div class="row">
-        <h1>Let's get this party started!!</h1>
-        <div class="col-md-4">
-          <Form />
+    <div className='mx-auto'>
+      
+      <div className="row align-items-start">
+        <div className="col">
         </div>
-        <Drink />
+        <div className="col">
+          <h1 className="text-center mt-3 border">Let's get this party started!!</h1>
+          <Form />
+          <Drink />
+        </div>
+        <div className="col">
+        </div>
       </div>
+      
     </div>
   )
 }

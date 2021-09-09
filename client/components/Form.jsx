@@ -9,7 +9,7 @@ const Form = ({ dispatch }) => {
   const [userIngr, setUserIngr] = useState('')
 
   // funcs to take input and dispatch req.
-  
+
   const formSubmit = (e) => {
     e.preventDefault()
     console.log(`formSubmit for something with ${userIngr} for a beautiful ${userName}`)
@@ -20,19 +20,39 @@ const Form = ({ dispatch }) => {
   return (
     <div>
       <form onSubmit={formSubmit}>
-        <input
-          type="text"
-          placeholder='name'
-          required
-          onChange={(e) => setUserName(e.target.value)} />
-        <input
-          type="text"
-          placeholder='desired ingredient'
-          required
-          onChange={(e) => setUserIngr(e.target.value)} />
-        <button type='button' onClick={addPerson}>+</button>
-        <button type='submit'>Party PARTY!!</button>
+        <div class="row">
+        <div className="input-group d-flex justify-content-center mt-3">
+        <div class="col">
+          <div className="form-floating me-auto">
+            <input
+              id="floatingInput"
+              className="form-control form-control-lg"
+              type="text"
+              placeholder='name'
+              required
+              onChange={(e) => setUserName(e.target.value)} />
+            <label for="floatingInput">Name</label>
+          </div>
+          </div>
+          <div class="col">
+          <div className="form-floating ms-auto">
+            <input
+              className="form-control form-control-lg "
+              type="text"
+              placeholder='desired ingredient'
+              required
+              onChange={(e) => setUserIngr(e.target.value)} />
+            <label for="floatingInput">Desired Ingredient</label>
+          </div>
+          </div>
+        </div>
+        <div className="input-group d-flex justify-content-center mt-2 mb-2">
+        <button className="btn btn-lg btn-success me-auto" type='button' onClick={addPerson}>+</button>
+        <button className="btn btn-lg btn-primary ms-auto" type='submit'>Party PARTY!!</button>
+        </div> 
+        </div>
       </form>
+     
     </div>
   )
 }
