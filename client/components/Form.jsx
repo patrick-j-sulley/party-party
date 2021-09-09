@@ -23,6 +23,7 @@ const Form = ({ dispatch }) => {
   const addPerson = () => console.log('addPerson yo')
 
   return (
+    <div className=" my-auto">
     <div className="row align-items-start">
       <div className="col">
       </div>
@@ -76,6 +77,7 @@ const Form = ({ dispatch }) => {
       </div>
       <div className="col">
       </div>
+    </div>
     </div>
   )
 }
