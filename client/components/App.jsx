@@ -17,4 +17,9 @@ function App () {
   )
 }
 
+// EXAMPLE OF CHILDREN PROP THING
+// <LoadSubreddit>
+//   <WaitIndicator />
+// </LoadSubreddit>
+
 export default App
