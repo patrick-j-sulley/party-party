@@ -1,17 +1,17 @@
 import React from 'react'
 import { connect } from 'react-redux'
 
-const Drink = ({}) => {
+const Drink = ({ }) => {
   return (
-    <div className =''>
-      <img src="https://cocktailpartyapp.com/wp-content/uploads/Halekulani.png" alt="Cartoon cocktail colored orange with a pink flower. It might be a Tequlia Sunrise" />
-      <h3>Tequlia Sunrise</h3>
-      <p>Name Namington</p>
-      <ul>
-        <li>Orange Juice</li>
-        <li>Tequila</li>
-        <li>Grenadine</li>
-      </ul>
+
+    <div className="card">
+      <img src="https://cocktailpartyapp.com/wp-content/uploads/Halekulani.png" className="card-img-top" alt="Cartoon cocktail colored orange with a pink flower. It might be a Tequlia Sunrise" />
+      <div className="card-body">
+        <h5 className="card-title">Tequlia Sunrise</h5>
+        <li className="card-text">Orange Juice</li>
+        <li className="card-text">Tequila</li>
+        <li className="card-text">Grenadine</li>
+      </div>
     </div>
   )
 }
