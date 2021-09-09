@@ -8,3 +8,64 @@
   margin-left: 5px;
   width: 20px;
 }
+
+html, body, .container-fluid{
+  background-color: #8C1684;
+  background-image: url('https://www.onlygfx.com/wp-content/uploads/2018/10/4-confetti-background-1.png');
+  background-size: 100%;
+}
+
+h1{
+  color: #84BF04;
+  font-family: 'Shadows Into Light', cursive;
+  background-color: #381A40;
+  border-radius: 8px;
+}
+
+.col{
+  justify-content: center;
+}
+
+.btn {
+  background-color: #84BF04;
+}
+
+.card{
+  border-radius: 8px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.card-img-top{
+  background-color: #1D0926;
+}
+
+
+.card-body{
+  background-color: #381A40;
+  color: #84BF04;
+}
+
+.form-floating{
+  background-color: #1D0926;
+}
+
+/* Color Theme Swatches in Hex */
+/* .CROOK-&-MARKER-CGI-Key-Visuals-1-hex { color: #8C1684; }
+.CROOK-&-MARKER-CGI-Key-Visuals-2-hex { color: #381A40; }
+.CROOK-&-MARKER-CGI-Key-Visuals-3-hex { color: #1D0926; }
+.CROOK-&-MARKER-CGI-Key-Visuals-4-hex { color: #365902; }
+.CROOK-&-MARKER-CGI-Key-Visuals-5-hex { color: #84BF04; } */
+
+/* Color Theme Swatches in RGBA */
+/* .CROOK-&-MARKER-CGI-Key-Visuals-1-rgba { color: rgba(140, 22, 132, 1); }
+.CROOK-&-MARKER-CGI-Key-Visuals-2-rgba { color: rgba(55, 26, 63, 1); }
+.CROOK-&-MARKER-CGI-Key-Visuals-3-rgba { color: rgba(29, 8, 38, 1); }
+.CROOK-&-MARKER-CGI-Key-Visuals-4-rgba { color: rgba(54, 89, 1, 1); }
+.CROOK-&-MARKER-CGI-Key-Visuals-5-rgba { color: rgba(131, 191, 3, 1); } */
+
+/* Color Theme Swatches in HSLA */
+/* .CROOK-&-MARKER-CGI-Key-Visuals-1-hsla { color: hsla(303, 72, 31, 1); }
+.CROOK-&-MARKER-CGI-Key-Visuals-2-hsla { color: hsla(286, 41, 17, 1); }
+.CROOK-&-MARKER-CGI-Key-Visuals-3-hsla { color: hsla(281, 62, 9, 1); }
+.CROOK-&-MARKER-CGI-Key-Visuals-4-hsla { color: hsla(84, 96, 17, 1); }
+.CROOK-&-MARKER-CGI-Key-Visuals-5-hsla { color: hsla(78, 96, 38, 1); } */
