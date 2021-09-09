@@ -25,9 +25,9 @@ const Form = ({ dispatch }) => {
   return (
     <div>
       <form onSubmit={formSubmit}>
-        <div class="row">
+        <div className="row">
           <div className="input-group d-flex justify-content-center mt-3">
-            <div class="col">
+            <div className="col">
               <div className="form-floating me-auto">
                 <input
                   id="floatingInput"
@@ -37,10 +37,10 @@ const Form = ({ dispatch }) => {
                   required
                   onChange={e => setUserName(e.target.value)}
                 />
-                <label for="floatingInput">Name</label>
+                <label htmlFor="floatingInput">Name</label>
               </div>
             </div>
-            <div class="col">
+            <div className="col">
               <div className="form-floating ms-auto">
                 <input
                   className="form-control form-control-lg "
@@ -49,7 +49,7 @@ const Form = ({ dispatch }) => {
                   required
                   onChange={e => setUserIngr(e.target.value)}
                 />
-                <label for="floatingInput">Desired Ingredient</label>
+                <label htmlFor="floatingInput">Desired Ingredient</label>
               </div>
             </div>
           </div>
