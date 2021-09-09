@@ -13,7 +13,7 @@ function App() {
         <div className="col">
         </div>
         <div className="col">
-          <h1 className="text-center mt-3 border">Let's get this party started!!</h1>
+          <h1 className="text-center mt-3 p-4 border">Let's get this party started!!</h1>
           <Form />
           <Drink />
         </div>
