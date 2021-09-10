@@ -32,7 +32,8 @@
     ]
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "superagent": "^5.3.1"
   },
   "devDependencies": {
     "@babel/core": "^7.10.3",
@@ -56,5 +57,8 @@
     "supertest": "^4.0.2",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.12"
+  },
+  "engines": {
+    "node": "14.x"
   }
 }

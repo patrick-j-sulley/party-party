@@ -8,10 +8,10 @@ function App() {
   // bit of a title
 
   return (
-    <div className='container appcontainer'>
-          <Form />
-          <Drink />
-          {/* <LoadingIndicator/> */}
+    <div className="container appcontainer">
+      <Form />
+      <Drink />
+      {/* <LoadingIndicator/> */}
     </div>
   )
 }
