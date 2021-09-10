@@ -24,6 +24,7 @@ const Drink = ({ drinksArr }) => {
     setChangeDrink(num)
   }
 
+
   //strGlass
   //strIngredient1
   //strIngredient2
@@ -53,13 +54,14 @@ const Drink = ({ drinksArr }) => {
             <img src={image} className="card-img-top" onClick={drinkHandler} />
             <div className="card-body">
               <h5 className="card-title">{drinkName}</h5>
+
               <p>
                 <i>{alcoholicCheck}</i>
               </p>
             </div>
           </div>
         </div>
-        <div className="col"></div>
+        <div className='col'></div>
       </div>
     </>
   )

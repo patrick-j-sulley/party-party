@@ -29,7 +29,6 @@ const LoadingIndicator = ({ }) => {
   let randomMsg = getRandomFrom(possibleMsgs)
 
   useEffect(() => {
-    console.log(randomMsg)
     setTimeout(() => {
       randomMsg = getRandomFrom(possibleMsgs)
     }, 1000)
@@ -46,8 +45,8 @@ const LoadingIndicator = ({ }) => {
               <div class="text-center">
                 <img className='loadinggif m-3 border' src={randomGif} />
                 <p className="loadingtext">{randomMsg}</p>
-                <div class="spinner-border" role="status">
-                  <span class="visually-hidden">Loading...</span>
+                <div className="spinner-border" role="status">
+                  <span className="visually-hidden">Loading...</span>
                 </div>
               </div>
             </div>
