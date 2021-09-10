@@ -14,7 +14,7 @@ function App({ username }) {
     if (drinkIsSubmitted) {
       setTimeout(() => {
         setNextScreen(<Drink />)
-      }, 3500)
+      }, 5000)
     }
   }, [username])
 

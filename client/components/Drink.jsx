@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { connect } from 'react-redux'
 
-const Drink = ({ drinksArr }) => {
+const Drink = ({ drinksArr, name }) => {
   const [drinkName, setDrinkName] = useState(
     'The Mixologist catches your eye as you approach the bar.'
   )
@@ -53,13 +53,14 @@ const Drink = ({ drinksArr }) => {
 
   return (
     <>
-      <div className="SHIIIT row align-items-start">
-        <div className="col"></div>
-        <div className="col">
-          <div className="card">
-            <img src={image} className="card-img-top" onClick={drinkHandler} />
-            <div className="card-body">
-              <h5 className="card-title">{drinkName}</h5>
+      <div className='SHIIIT row align-items-center'>
+        <div className='col-3'></div>  
+        <div className='col-6'>
+        <h1 className="text-center mt-3 p-4 border">{name}</h1>
+          <div className='card'>
+            <img src={image} className='mx-auto card-img-top' onClick={drinkHandler} />
+            <div className='card-body'>
+              <h2 className='card-title'><u>{drinkName}</u></h2>
               <p>
                 <b><u>Type:</u></b> <i>{alcoholicCheck}</i>
               </p>
@@ -84,6 +85,7 @@ const Drink = ({ drinksArr }) => {
 function mapStateToProps(state) {
   return {
     drinksArr: state.cocktails,
+    name: state.userName
   }
 }
 
