@@ -24,10 +24,13 @@ const Drink = ({ drinksArr }) => {
     setChangeDrink(num)
   }
 
-
   //strGlass
   //strIngredient1
   //strIngredient2
+
+  const [glassType, setGlassType] = useState('loading...')
+  const [ingred1, setIngred1] = useState('loading...')
+  const [ingred2, setingred2] = useState('loading...')
 
   //you walk up to the bar
   //you try to catch the bartender's eye
@@ -42,6 +45,9 @@ const Drink = ({ drinksArr }) => {
       setDrinkName(drinksArr[idx].strDrink)
       setAlcoholicCheck(drinksArr[idx].strAlcoholic)
       setImage(drinksArr[idx].strDrinkThumb)
+      setGlassType(drinksArr[0].strGlass)
+      setIngred1(drinksArr[0].strIngredient1)
+      setingred2(drinksArr[0].strIngredient2)
     }
   }, [drinksArr, idx])
 
@@ -55,7 +61,16 @@ const Drink = ({ drinksArr }) => {
             <div className="card-body">
               <h5 className="card-title">{drinkName}</h5>
               <p>
-                <i>{alcoholicCheck}</i>
+                <b><u>Type:</u></b> <i>{alcoholicCheck}</i>
+              </p>
+              <p>
+                <b><u>Served in:</u></b> <i>{glassType}</i>
+              </p>
+              <p>
+                <b><u>Main ingredient:</u></b> <i>{ingred1}</i>
+              </p>
+              <p>
+                <b><u>Also contains:</u></b> <i>{ingred2}</i>
               </p>
             </div>
           </div>
