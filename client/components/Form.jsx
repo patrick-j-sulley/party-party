@@ -25,13 +25,13 @@ const Form = ({ dispatch }) => {
 
   return (
     <div className=" my-auto">
-    <div className="SHIIIT row align-items-center">
-      <div className="col-3">
-      </div>
-      <div className="col-6">
-        <h1 className="text-center mt-3 p-4 border">Let's get this party started!!</h1>
-        <div>
-          <form onSubmit={formSubmit}>
+      <div className="SHIIIT row align-items-center">
+        <div className="col-3">
+        </div>
+        <div className="col-6">
+          <h1 className="text-center mt-3 p-4 border">Let's get this party started!!</h1>
+          <div>
+            <form onSubmit={formSubmit}>
             <div className="row">
               <div className="input-group d-flex justify-content-center mt-3">
                 <div className="col">
@@ -75,10 +75,19 @@ const Form = ({ dispatch }) => {
                   </button>
                 </div>
               </div>
+              </div>
             </form>
+            <div className='card'>
+            <img src='./bartender.png'/>
+            <div className='card-body'>
+              <h2 className='card-title'>
+                The Mixologist catches your eye as you approach the bar.
+              </h2>
+              <p>Listening to the yelling over the sound of the jazz bass solo, you hear the question for the second time:</p>
+            </div>
+            </div>
           </div>
         </div>
-      </div>
       <div className="col-3">
       </div>
     </div>
