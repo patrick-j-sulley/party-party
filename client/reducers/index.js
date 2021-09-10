@@ -1,11 +1,11 @@
 import { combineReducers } from 'redux'
 
-import errorMessage from './errorMessage'
-import subreddits from './subreddits'
 import waiting from './waiting'
+import cocktails from './cocktails'
+import userName from './userName'
 
 export default combineReducers({
-  errorMessage,
-  subreddits,
-  waiting
+  waiting,
+  cocktails,
+  userName,
 })

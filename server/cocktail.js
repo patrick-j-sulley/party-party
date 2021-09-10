@@ -5,14 +5,16 @@ const router = express.Router()
 
 router.use(express.json())
 
-router.get('/subreddit/:subreddit', (req, res) => {
+//www.thecocktaildb.com/api/json/v1/1/search.php?s=vodka
+
+router.get('/query/:query', (req, res) => {
   request
-    .get(`http://www.reddit.com/r/${req.params.subreddit}.json`)
+    .get(`www.thecocktaildb.com/api/json/v1/1/search.php?s=${req.params.query}`)
     .end((err, result) => {
       if (err) {
         res.status(500).send(err.message)
       } else {
-        res.json(result.body.data.children)
+        res.json(result.body)
       }
     })
 })
