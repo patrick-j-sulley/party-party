@@ -13,9 +13,9 @@ const Form = ({ dispatch }) => {
 
   const formSubmit = e => {
     e.preventDefault()
-    console.log(
-      `formSubmit for something with ${userIngr} for a beautiful ${userName}`
-    )
+    // console.log(
+      // `formSubmit for something with ${userIngr} for a beautiful ${userName}`
+    // )
     //dispatching to the THUNK to receive data from the API
     dispatch(fetchCocktail(userIngr))
     dispatch(receiveName(userName))

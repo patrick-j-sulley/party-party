@@ -12,7 +12,7 @@ export function requestCocktail() {
 }
 
 export function receiveCocktail(cocktail) {
-  console.log(cocktail)
+  // console.log(cocktail)
   return {
     type: RECEIVE_COCKTAIL,
     cocktail: cocktail.drinks,
