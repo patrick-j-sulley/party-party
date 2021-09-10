@@ -3,6 +3,7 @@ import request from 'superagent'
 export const SHOW_ERROR = 'SHOW_ERROR'
 export const RECEIVE_COCKTAIL = 'RECEIVE_COCKTAIL'
 export const REQUEST_COCKTAIL = 'REQUEST_COCKTAIL'
+export const ADD_USER = 'ADD_USER'
 
 export function requestCocktail() {
   return {
@@ -22,6 +23,13 @@ export function showError(errorMessage) {
   return {
     type: SHOW_ERROR,
     errorMessage: errorMessage,
+  }
+}
+
+export function receiveName(userName) {
+  return {
+    type: ADD_USER,
+    userName: userName,
   }
 }
 

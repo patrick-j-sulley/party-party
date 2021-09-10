@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { connect } from 'react-redux'
-import { fetchCocktail } from '../actions'
+import { fetchCocktail, receiveName } from '../actions'
 
 // imp actionCreator to dispatch API req.
 
@@ -18,6 +18,7 @@ const Form = ({ dispatch }) => {
     )
     //dispatching to the THUNK to receive data from the API
     dispatch(fetchCocktail(userIngr))
+    dispatch(receiveName(userName))
   }
 
   const addPerson = () => console.log('addPerson yo')
