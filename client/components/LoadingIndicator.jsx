@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { connect } from 'react-redux'
 
-const LoadingIndicator = ({}) => {
+const LoadingIndicator = ({ }) => {
   const possibleGifs = [
     'https://i.giphy.com/media/WocwafmqiunUM1wfq9/giphy.webp',
     'https://i.giphy.com/media/jtc9gjTHVfvUdmeKGi/giphy.webp',
@@ -37,9 +37,25 @@ const LoadingIndicator = ({}) => {
 
   return (
     <>
-      {/* STYLES NEEDED */}
-      <img className='' src={randomGif} />
-      <p>{randomMsg}</p>
+      <div className="row align-items-center">
+        <div className="col">
+        </div>
+        <div className="col">
+          <div className="card">
+            <div className="card-body">
+              <div class="text-center">
+                <img className='loadinggif m-3 border' src={randomGif} />
+                <p className="loadingtext">{randomMsg}</p>
+                <div class="spinner-border" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="col">
+        </div>
+      </div>
     </>
   )
 }

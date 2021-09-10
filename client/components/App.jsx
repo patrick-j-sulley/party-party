@@ -2,25 +2,16 @@ import React from 'react'
 
 import Form from './Form'
 import Drink from './Drink'
+import LoadingIndicator from './LoadingIndicator'
 
 function App() {
   // bit of a title
 
   return (
-    <div className='mx-auto'>
-      
-      <div className="row align-items-start">
-        <div className="col">
-        </div>
-        <div className="col">
-          <h1 className="text-center mt-3 border">Let's get this party started!!</h1>
+    <div className='container appcontainer'>
           <Form />
           <Drink />
-        </div>
-        <div className="col">
-        </div>
-      </div>
-      
+          {/* <LoadingIndicator/> */}
     </div>
   )
 }
