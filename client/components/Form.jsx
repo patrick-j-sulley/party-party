@@ -25,28 +25,26 @@ const Form = ({ dispatch }) => {
 
   return (
     <div className=" my-auto">
-      <div className="SHIIIT row align-items-center">
-        <div className="col"></div>
-        <div className="col">
-          <h1 className="text-center mt-3 p-4 border">
-            Let's get this party started!!
-          </h1>
-          <div>
-            <form onSubmit={formSubmit}>
-              <div className="row">
-                <div className="input-group d-flex justify-content-center mt-3">
-                  <div className="col">
-                    <div className="form-floating me-auto">
-                      <input
-                        id="floatingInput"
-                        className="form-control form-control-lg"
-                        type="text"
-                        placeholder="name"
-                        required
-                        onChange={e => setUserName(e.target.value)}
-                      />
-                      <label htmlFor="floatingInput">What's your name?</label>
-                    </div>
+    <div className="SHIIIT row align-items-center">
+      <div className="col-3">
+      </div>
+      <div className="col-6">
+        <h1 className="text-center mt-3 p-4 border">Let's get this party started!!</h1>
+        <div>
+          <form onSubmit={formSubmit}>
+            <div className="row">
+              <div className="input-group d-flex justify-content-center mt-3">
+                <div className="col">
+                  <div className="form-floating me-auto">
+                    <input
+                      id="floatingInput"
+                      className="form-control form-control-lg"
+                      type="text"
+                      placeholder="name"
+                      required
+                      onChange={e => setUserName(e.target.value)}
+                    />
+                    <label htmlFor="floatingInput">Name</label>
                   </div>
                   <div className="col">
                     <div className="form-floating ms-auto">
@@ -80,8 +78,10 @@ const Form = ({ dispatch }) => {
             </form>
           </div>
         </div>
-        <div className="col"></div>
       </div>
+      <div className="col-3">
+      </div>
+    </div>
     </div>
   )
 }

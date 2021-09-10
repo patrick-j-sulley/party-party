@@ -20,6 +20,10 @@ html, body, .container-fluid{
   height: 100vh
 }
 
+.SHIT {
+  max-width: 500px;
+}
+
 h1{
   color: #84BF04;
   font-family: 'Shadows Into Light', cursive;
@@ -45,6 +49,7 @@ h2 {
 
 .card{
   font-family: 'Roboto', sans-serif;
+  background-color: #1D0926;
 }
 
 .card-img-top{
@@ -62,6 +67,7 @@ h2 {
 }
 
 .loadingtext{
+  font-family: 'Shadows Into Light', cursive;
   font-style:bold;
 }
 

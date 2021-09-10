@@ -37,14 +37,14 @@ const LoadingIndicator = ({ }) => {
   return (
     <>
       <div className="SHIIIT row align-items-center">
-        <div className="col">
+        <div className="col-3">
         </div>
-        <div className="col">
+        <div className="col-6">
           <div className="card">
             <div className="card-body">
               <div class="text-center">
-                <img className='loadinggif m-3 border' src={randomGif} />
-                <p className="loadingtext">{randomMsg}</p>
+                <img className='loadinggif mb-3 mt-2 border' src={randomGif} />
+                <h3 className="loadingtext mb-3">{randomMsg}</h3>
                 <div className="spinner-border" role="status">
                   <span className="visually-hidden">Loading...</span>
                 </div>
@@ -52,7 +52,7 @@ const LoadingIndicator = ({ }) => {
             </div>
           </div>
         </div>
-        <div className="col">
+        <div className="col-3">
         </div>
       </div>
     </>

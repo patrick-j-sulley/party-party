@@ -75,7 +75,7 @@ const Drink = ({ drinksArr }) => {
             </div>
           </div>
         </div>
-        <div className='col'></div>
+        <div className='col-3'></div>
       </div>
     </>
   )
