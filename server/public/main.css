@@ -16,11 +16,23 @@ html, body, .container-fluid{
   height:100vh;
 }
 
+.SHIIIT {
+  height: 100vh
+}
+
+.SHIT {
+  width: 90%
+}
+
 h1{
   color: #84BF04;
   font-family: 'Shadows Into Light', cursive;
   background-color: #381A40;
   border-radius: 8px;
+}
+
+h2 {
+  font-family: 'Shadows Into Light', cursive;
 }
 
 .loadinggif{
@@ -37,6 +49,7 @@ h1{
 
 .card{
   font-family: 'Roboto', sans-serif;
+  background-color: #1D0926;
 }
 
 .card-img-top{
@@ -54,6 +67,7 @@ h1{
 }
 
 .loadingtext{
+  font-family: 'Shadows Into Light', cursive;
   font-style:bold;
 }
 

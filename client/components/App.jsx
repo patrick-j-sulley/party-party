@@ -1,24 +1,34 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import { connect } from 'react-redux'
 
 import Form from './Form'
 import Drink from './Drink'
 import LoadingIndicator from './LoadingIndicator'
 
-function App() {
-  // bit of a title
+function App({ username }) {
+  const drinkIsSubmitted = typeof username !== "object"
+
+  const [nextScreen, setNextScreen] = useState(<LoadingIndicator />)
+
+  useEffect(() => {
+    if (drinkIsSubmitted) {
+      setTimeout(() => {
+        setNextScreen(<Drink />)
+      }, 5000)
+    }
+  }, [username])
 
   return (
-    <div className="container appcontainer">
-      <Form />
-      <Drink />
-      {/* <LoadingIndicator/> */}
+    <div className='container appcontainer'>
+      {drinkIsSubmitted ? nextScreen : <Form />}
     </div>
   )
 }
 
-// EXAMPLE OF CHILDREN PROP THING
-// <LoadSubreddit>
-//   <WaitIndicator />
-// </LoadSubreddit>
+function mapStateToProps(state) {
+  return {
+    username: state.userName
+  }
+}
 
-export default App
+export default connect(mapStateToProps)(App)
