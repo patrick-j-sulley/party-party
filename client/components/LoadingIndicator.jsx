@@ -29,7 +29,6 @@ const LoadingIndicator = ({ }) => {
   let randomMsg = getRandomFrom(possibleMsgs)
 
   useEffect(() => {
-    console.log(randomMsg)
     setTimeout(() => {
       randomMsg = getRandomFrom(possibleMsgs)
     }, 1000)
@@ -37,23 +36,23 @@ const LoadingIndicator = ({ }) => {
 
   return (
     <>
-      <div className="row align-items-center">
-        <div className="col">
+      <div className="SHIIIT row align-items-center">
+        <div className="col-3">
         </div>
-        <div className="col">
+        <div className="col-6">
           <div className="card">
             <div className="card-body">
               <div class="text-center">
-                <img className='loadinggif m-3 border' src={randomGif} />
-                <p className="loadingtext">{randomMsg}</p>
-                <div class="spinner-border" role="status">
-                  <span class="visually-hidden">Loading...</span>
+                <img className='loadinggif mb-3 mt-2 border SHIT' src={randomGif} />
+                <h3 className="loadingtext mb-3">{randomMsg}</h3>
+                <div className="spinner-border" role="status">
+                  <span className="visually-hidden">Loading...</span>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="col">
+        <div className="col-3">
         </div>
       </div>
     </>
