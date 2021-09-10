@@ -47,14 +47,13 @@ const Drink = ({ drinksArr }) => {
 
   return (
     <>
-      <div className="row align-items-start">
+      <div className="SHIIIT row align-items-start">
         <div className="col"></div>
         <div className="col">
           <div className="card">
             <img src={image} className="card-img-top" onClick={drinkHandler} />
             <div className="card-body">
               <h5 className="card-title">{drinkName}</h5>
-
               <p>
                 <i>{alcoholicCheck}</i>
               </p>

@@ -25,7 +25,7 @@ const Form = ({ dispatch }) => {
 
   return (
     <div className=" my-auto">
-      <div className="row align-items-start">
+      <div className="SHIIIT row align-items-center">
         <div className="col"></div>
         <div className="col">
           <h1 className="text-center mt-3 p-4 border">

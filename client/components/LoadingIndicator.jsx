@@ -36,7 +36,7 @@ const LoadingIndicator = ({ }) => {
 
   return (
     <>
-      <div className="row align-items-center">
+      <div className="SHIIIT row align-items-center">
         <div className="col">
         </div>
         <div className="col">
